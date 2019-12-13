@@ -1,4 +1,4 @@
-package auto;
+package ensamblaje.auto;
 
 public class Carroceria {
 	private String tipoCarroceria;

@@ -1,11 +1,11 @@
-package builder;
-import auto.*;
+package ensamblaje.auto.builder;
+import ensamblaje.auto.*;
 
 public class AutoDirector {
 	
 	private AutoBuilder builder;
 
-	public AutoDirector(AutoBuilder auto) {
+	public AutoDirector(AutoBuilder builder) {
 		this.builder = builder;
 	}
 	

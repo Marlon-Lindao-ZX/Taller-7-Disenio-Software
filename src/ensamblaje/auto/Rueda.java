@@ -1,4 +1,4 @@
-package auto;
+package ensamblaje.auto;
 
 public class Rueda {
 	private int diamentro;

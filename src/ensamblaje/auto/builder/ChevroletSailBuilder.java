@@ -1,30 +1,30 @@
-package builder;
-import auto.*;
+package ensamblaje.auto.builder;
+import ensamblaje.auto.*;
 
-public class ChevroletSparktBuilder extends AutoBuilder{
+public class ChevroletSailBuilder extends AutoBuilder {
 
 	@Override
 	public void DefinirAuto() {
 		auto = new Auto();
-		auto.setMarca("");
-		auto.setModelo("");
+		auto.setMarca("Chevrolet");
+		auto.setModelo("Sail");
 		
 	}
 	
 	@Override
 	public void InstalarAlmacenamiento() {
 		Almacenamiento almacenamiento = new Almacenamiento();
-		almacenamiento.setCapacidad(0);
-		almacenamiento.setUnidad("");
+		almacenamiento.setCapacidad(1000);
+		almacenamiento.setUnidad("lb");
 		auto.setAlmacenamiento(almacenamiento);
 	}
 
 	@Override
 	public void ConstruirRuedas() {
 		Rueda ruedas = new Rueda();
-		ruedas.setDiamentro(0);
-		ruedas.setLlanta("");
-		ruedas.setNeumatico("");
+		ruedas.setDiamentro(15);
+		ruedas.setLlanta("Hierro");
+		ruedas.setNeumatico("Firestone");
 		auto.setTipoRuedas(ruedas);
 		
 	}
@@ -32,7 +32,7 @@ public class ChevroletSparktBuilder extends AutoBuilder{
 	@Override
 	public void ConstruirCarroceria() {
 		Carroceria tipoCarroceria = new Carroceria();
-		tipoCarroceria.setTipoCarroceria("");
+		tipoCarroceria.setTipoCarroceria("1J23KO23");
 		auto.setTipoCarroceria(tipoCarroceria);
 		
 	}
@@ -40,7 +40,7 @@ public class ChevroletSparktBuilder extends AutoBuilder{
 	@Override
 	public void ConstruirMotor() {
 		Motor tipoMotor = new Motor();
-		tipoMotor.setTipoMotor(0);
+		tipoMotor.setTipoMotor(1.4f);
 		auto.setMotor(tipoMotor);
 		
 	}

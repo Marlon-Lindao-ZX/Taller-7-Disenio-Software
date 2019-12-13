@@ -1,5 +1,5 @@
-package builder;
-import auto.*;
+package ensamblaje.auto.builder;
+import ensamblaje.auto.*;
 
 public abstract class AutoBuilder {
 	protected Auto auto;

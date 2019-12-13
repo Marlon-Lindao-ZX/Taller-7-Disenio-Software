@@ -1,4 +1,4 @@
-package auto;
+package ensamblaje.auto;
 
 public class Auto {
 	private String marca;
@@ -70,6 +70,17 @@ public class Auto {
 
 	public void setDireccionAsistida(boolean direccionAsistida) {
 		this.direccionAsistida = direccionAsistida;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder detalle = new StringBuilder("Especificiaciones Tecnicas:\n");
+        detalle.append("Marca: "+marca +"\n");
+        detalle.append("Modelo: "+modelo +"\n");
+        detalle.append("Motor: "+motor.getTipoMotor()+" \n");
+        detalle.append("Almacenamiento: "+almacenamiento.getCapacidad() +" "+almacenamiento.getUnidad() +"\n");
+        detalle.append("Carroceria: "+tipoCarroceria.getTipoCarroceria()+"\n");
+		return detalle.toString();
 	}
 	
 	
