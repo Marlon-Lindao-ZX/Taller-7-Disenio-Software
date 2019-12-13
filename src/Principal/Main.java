@@ -15,9 +15,15 @@ public class Main {
 		directorSparkt.ConstruirAuto();
 		Auto spark1 = directorSparkt.getAuto();
 		
-		//Mostrar las caracteristicas de ambos autos 
+		//Ensamblaje del auto Hyundai Santa Fe
+		AutoDirector directorSantaFe = new AutoDirector(new HyundaiSantaFeBuilder());
+		directorSantaFe.ConstruirAuto();
+		Auto santaFe1 = directorSantaFe.getAuto();
+		
+		//Mostrar las caracteristicas de los autos 
 		System.out.println(sail1.toString());
 		System.out.println(spark1.toString());
+		System.out.println(santaFe1.toString());
 
 	}
 }
